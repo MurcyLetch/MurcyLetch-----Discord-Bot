@@ -75,9 +75,11 @@ if __name__ =="__main__":
         elif 'shreya ghoshal song'in query:
             webbrowser.open("https://www.youtube.com/watch?v=bqsUEPRKQG0")     
         #search others in you tube.....by entering youtube.......... 
+        #ask about time
         elif 'the time' in query:
             strtime=datetime.datetime.now().strftime("%H:%M:%S")
             speak(f"sir,  the time is{strtime}")
+        #open apps in your system    
         elif 'open visual studio code' in query:
             c1path="C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
             os.startfile(c1path)
@@ -89,8 +91,6 @@ if __name__ =="__main__":
             os.startfile(c3path)  
         elif '*' in query:
             speak("you should not say this...............behave yourself!!.........otherwise i will not talk to you ")  
-        elif '*' in query:
-            speak("you should not say this...............behave yourself!!.........otherwise i will not talk to you ")     
         elif 'thank' in query:
             speak("you are welcome dear...................i love you")      
 
